@@ -1,66 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>comment</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-</head>
-<body>
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">acceuil</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">acceuil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="container mt-4">
-        <h3>ajouter le text et photo</h3>
-        <div class="mb-3">
-            <label for="textInput" class="form-label">text</label>
-            <textarea class="form-control" id="textInput" rows="3"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="imageInput" class="form-label">photo</label>
-            <input class="form-control" type="file" id="imageInput">
-        </div>
-        <button class="btn btn-primary">ajouter</button>
-    </div>
-
-
-    <div class="container mt-4">
-        <h3>comments</h3>
-        <div class="mb-3">
-            <textarea class="form-control" id="commentInput" rows="3" placeholder="comment..."></textarea>
-        </div>
-        <button class="btn btn-success">valider</button>
-    </div>
-
-
-    <div class="container mt-4">
-        <h3>history</h3>
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h5>date</h5>
-            <button class="btn btn-secondary">filter</button>
-        </div>
-        <ul class="list-group" id="commentHistory">
-            <li class="list-group-item">dgsgdsg1 - 2024-10-01</li>
-            <li class="list-group-item">dgsgsgs2 - 2024-10-02</li>
-        </ul>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
-<script>
 const addButton = document.querySelector('.btn-primary');  
 const submitCommentButton = document.querySelector('.btn-success');  
 const filterButton = document.querySelector('.btn-secondary'); 
@@ -141,6 +78,3 @@ function displayComments(commentArray) {
         commentHistory.appendChild(item);
     });
 }
-</script>
-</body>
-</html>
