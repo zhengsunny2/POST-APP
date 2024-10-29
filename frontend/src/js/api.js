@@ -12,3 +12,12 @@ async function postUser(userData) {
   
     return response.json();
   }
+
+  // Fonction pour récupérer les posts
+async function getPosts() {
+  const response = await fetch('http://localhost:3000/api/posts');
+  if (!response.ok) {
+    throw new Error('Erreur lors de la récupération des posts');
+  }
+  return response.json();
+}
