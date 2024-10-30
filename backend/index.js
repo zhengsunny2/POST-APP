@@ -7,7 +7,7 @@ const cors = require('cors');
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-require('dotenv').config();
+// require('dotenv').config();
 // Configuration du stockage de l'image avec multer pour la photo de l'utilisateur
 const storage = multer.diskStorage({
   destination: './uploads/',
@@ -20,9 +20,9 @@ app.use(cors());
 // Configuration de la connexion MySQL
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'descodeuses',
+  host: "localhost",
+  user: "root",
+  password:"descodeuses",
   port: 3306
 });
 
