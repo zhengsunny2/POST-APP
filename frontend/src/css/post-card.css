@@ -1,4 +1,4 @@
-/* Style général pour la carte /
+/* Style général pour la carte */
 .post-card {
   border: 2px solid #87ceeb;
   border-radius: 10px;
@@ -12,7 +12,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/ Style du contenu du post /
+/* Style du contenu du post */
 .post-content {
   font-size: 1rem;
   color: #333;
@@ -23,7 +23,7 @@
   font-weight: bold;
 }
 
-/ Style de la pièce jointe /
+/* Style de la pièce jointe */
 .attachment {
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-/ Style des actions (attacher un fichier et publier) */
+/* Style des actions (attacher un fichier et publier) */
 .actions {
     display: flex;
     justify-content: flex-end;
